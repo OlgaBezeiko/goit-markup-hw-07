@@ -38,15 +38,8 @@ font-family: var(--primary-font);
 color: var(--color-navy-blue-overlay-shadow-heading);
 background-color: var(--color-body);}
 
-.container {
-  width: 1158px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 
-.section-padding {
+/*.section-padding {
 padding-top: 120px;
 padding-bottom: 120px;}
 
@@ -59,10 +52,71 @@ padding-bottom: 120px;}
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
-}
+}*/
 
 /*==========================ХЕДЕР=====================================*/
+
+
+.container {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media screen and (min-width: 428px) {
+  .container {
+    width: 396px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 712px;
+  }
+} 
+  
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1158px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+  
+  .address {
+    display: none;
+  }  
+}
+
+.page-heder-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .page-heder {
+  border-bottom: 1px solid var(--color-cornflower-accent);
+  padding-top: 24px;
+  padding-bottom: 24px;}
+
+
+.mobile-menu-open {
+  background-color: var(--color-navy-blue-overlay-shadow-heading);
+  border: none;
+  padding: 0;
+  fill: currentColor;
+  line-height: 0;
+  
+}
+
+
+
+/*.page-heder {
 border-bottom: 1px solid var(--color-cornflower-accent);}
 
 .page-heder-container {
@@ -84,8 +138,9 @@ border-bottom: 1px solid var(--color-cornflower-accent);}
 
 .part-of-word {
   color: var(--color-iris-focus-aktiv-link);
-}
+}*/
 /*========================Навігація в хедері=========================================*/
+/*
 .site-nav {
   display: flex;
   align-items: center;
@@ -154,7 +209,17 @@ transition: color var(--transition);
 }
 .contact-mail-phone:hover,
 .contact-mail-phone:focus {
-  color: var(--color-ocean-hover-pressed);}
+  color: var(--color-ocean-hover-pressed);}*/
+
+
+
+
+
+
+
+
+
+
 
   /*=========================Герой====================*/
 .button {
