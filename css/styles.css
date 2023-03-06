@@ -39,7 +39,7 @@ color: var(--color-navy-blue-overlay-shadow-heading);
 background-color: var(--color-body);}
 
 
-/*.section-padding {
+.section-padding {
 padding-top: 120px;
 padding-bottom: 120px;}
 
@@ -52,7 +52,7 @@ padding-bottom: 120px;}
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
-}*/
+}
 
 /*==========================ХЕДЕР=====================================*/
 .container {
@@ -321,7 +321,6 @@ padding-bottom: 0;
 
 
   /*=========================Герой====================*/
-  @media screen and (max-width: 767px) {
   .hero {
     background-color: var(--color-navy-blue-overlay-shadow-heading);
     padding: 112px 0px;
@@ -335,16 +334,6 @@ padding-bottom: 0;
     background-position: center;
     background-size: 428px 432px;
   }
-  .hero-one {
-    width: 100%;
-    margin-bottom: 72px;
-    font-size: 36px;
-    line-height: 1.11;
-    color: var(--color-body);
-    margin-left: auto;
-    margin-right: auto;
-    } }
-
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
 screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -361,15 +350,6 @@ screen and (min-resolution: 2ddpx) and (max-width: 767px) {
   padding top: 112px;
   padding-bottom: 108px;
   }
-  
-  .hero-one {
-    width: 100%;
-    margin-bottom: 40px;
-    font-size: 56px;
-    line-height: 1.07;
-    color: var(--color-body);
-    }
-
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -386,13 +366,7 @@ screen and (min-resolution: 2ddpx) and (min-width: 768px) {
     background-size: 1440px 600px;
     padding: 188px;
   }
-  .hero-one {
-    width: 100%;
-    margin-bottom: 48px;
-    font-size: 56px;
-    line-height: 1.07;
-    color: var(--color-body);
-    }
+  
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
@@ -419,80 +393,106 @@ padding: 16px 32px;
 transition: color var(--transition), background-color var(--transition);
 }
 
-
-
-
-  /*.button {
-background-color: var(--color-iris-focus-aktiv-link);
-font-family: 'Roboto', sans-serif;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.04em;
-color: var(--color-body);
-cursor: pointer;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-border: none;
-padding: 16px 32px;
-transition: color var(--transition), background-color var(--transition);
-}
-  
-.button:hover,
-.button:focus{
-background-color: var(--color-ocean-hover-pressed);
-color: var(--color-body);
-}
-
-.hero {
-  background-color: var(--color-navy-blue-overlay-shadow-heading);
-  padding: 188px 0px;
-  text-align: center;
-
-  max-width: 1440px;
+@media screen and (max-width: 767px)
+ {.hero-one {
+  width: 100%;
+  margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--color-body);
   margin-left: auto;
   margin-right: auto;
- 
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/fon-hero1.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
+  } }
 
-.hero-one {
-width: 500px;
-margin-right: auto;
-margin-left: auto;
-margin-bottom: 48px;
-font-size: 56px;
-line-height: 1.07;
-letter-spacing: 0.02em;
-color: var(--color-body);
-}*/
+  @media screen and (min-width: 768px) {
+    .hero-one {
+      width: 100%;
+      margin-bottom: 40px;
+      font-size: 56px;
+      line-height: 1.07;
+      color: var(--color-body);
+      } 
 
+      .button:hover,
+      .button:focus{
+       background-color: var(--color-ocean-hover-pressed);
+       color: var(--color-body);
+       }
+       }
+
+  @media screen and (min-width: 1200px) {
+   .hero-one {
+      width: 100%;
+      margin-bottom: 48px;
+      font-size: 56px;
+      line-height: 1.07;
+      color: var(--color-body);
+      } 
+     
+  }
 /*===========================Друга секція ПЕРЕВАГИ=========================*/
-.second {
-  padding-top: 120px;}
+@media screen and (max-width: 1200px) 
+{ .second-list-decoration {
+display: none;}
 
-.second-head {
-font-size: 36px;
-line-height: 1.11;
-letter-spacing: 0.02em;
-text-align: center;
-text-transform: capitalize;
-margin-bottom: 72px;}
-
-.photo-header {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+ .second-list-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  margin-top: 8px;
-  color: var(--color-navy-blue-overlay-shadow-heading);
- }
- 
+  color: var(--color-slate-text);
+}
+.main-text {
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--color-slate-text);} 
+
+.second-list-item:not(:last-child) 
+  {margin-bottom: 72px;}
+
+  .second {
+    padding: 96px 0px;} }
+
+@media screen and (min-width: 768px) {
+  
+  .second-list-header {
+    text-align: left;
+  }
+  .second-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 24px;
+   }
+   .second-list-item {
+    flex-basis: calc((100% - 1*24px) / 2);
+   }
+}
+
+@media screen and (min-width: 1200px) {
+.second {
+padding-top: 120px;}
+
+.second-list-header {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+text-align: left;
+text-transform: capitalize;
+margin-bottom: 8px;
+margin-top: 8px;
+color: var(--color-navy-blue-overlay-shadow-heading);}
+
  .second-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+ }
+
+ .second-list-decoration {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -508,6 +508,10 @@ justify-content: center;
 align-items: center;
 }
 
+.decoration {
+  flex-basis: calc((100% - 3*24px) / 4);
+ }
+
  .second-list-item {
   flex-basis: calc((100% - 3*24px) / 4);
  }
@@ -516,15 +520,57 @@ align-items: center;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-slate-text)
-  }
+  }}
+
 
   /*=========================Третя секція ЩО МИ РОБИМО====================*/
-.third-list {display: flex;
-flex-wrap: wrap;
-gap: 24px;}
+  @media screen and (max-width: 1200px) {
+    .third {
+      display: none;
+    }}
 
-.third-list-item {
-  flex-basis: calc((100% - 2*24px) / 3);}
+
+    .third-list {
+      display: flex;
+      gap: 24px;}
+
+
+    .third-list-item {
+      flex-basis: calc((100% - 2*24px) / 3);}
+  
+.second-head {
+font-size: 36px;
+line-height: 40px;
+text-align: center;
+letter-spacing: 0.02em;
+color: var(--color-navy-blue-overlay-shadow-heading);
+margin-bottom: 72px;
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*============================Четверта секція НАША КОМАНДА=================*/
   
