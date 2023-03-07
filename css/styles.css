@@ -40,8 +40,8 @@ background-color: var(--color-body);}
 
 
 .section-padding {
-padding-top: 120px;
-padding-bottom: 120px;}
+padding-top: 96px;
+padding-bottom: 96px;}
 
 .visualy-hidden {
   position: absolute;
@@ -63,7 +63,7 @@ padding-bottom: 120px;}
 
 @media screen and (min-width: 428px) {
   .container {
-    width: 396px;
+    width: 428px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -71,13 +71,13 @@ padding-bottom: 120px;}
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 712px;
+    width: 768px;
   }
 } 
   
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1158px;
+    width: 1200px;
   }
 }
 
@@ -364,7 +364,7 @@ screen and (min-resolution: 2ddpx) and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/desk-hero1x.jpg);
     background-size: 1440px 600px;
-    padding: 188px;
+   
   }
   
 }
@@ -421,8 +421,8 @@ transition: color var(--transition), background-color var(--transition);
        }
 
   @media screen and (min-width: 1200px) {
-   .hero-one {
-      width: 100%;
+   .hero-one {margin: 0 auto;
+      width: 496px;
       margin-bottom: 48px;
       font-size: 56px;
       line-height: 1.07;
@@ -450,11 +450,15 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--color-slate-text);} 
 
-.second-list-item:not(:last-child) 
-  {margin-bottom: 72px;}
+
 
   .second {
     padding: 96px 0px;} }
+
+@media screen and (max-width: 767px) {
+  .second-list-item:not(:last-child) 
+  {margin-bottom: 72px;}
+}
 
 @media screen and (min-width: 768px) {
   
@@ -464,7 +468,7 @@ color: var(--color-slate-text);}
   .second-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 0px 24px;
+    gap: 72px 24px;
    }
    .second-list-item {
     flex-basis: calc((100% - 1*24px) / 2);
@@ -524,10 +528,16 @@ align-items: center;
 
 
   /*=========================Третя секція ЩО МИ РОБИМО====================*/
-  @media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
+
     .third {
-      display: none;
-    }}
+      display: none;}
+
+    .section-padding {
+      padding-top: 120px;
+      padding-bottom: 120px;
+      }}
+    
 
 
     .third-list {
@@ -547,40 +557,17 @@ color: var(--color-navy-blue-overlay-shadow-heading);
 margin-bottom: 72px;
 }
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*============================Четверта секція НАША КОМАНДА=================*/
+  
   
 .fourth {
 background-color: var(--color-cloud-accent)}
 
 .team-list {margin-top: 72px;
 display: flex;
-flex-wrap: wrap;
-gap: 48px 24px;}
+flex-direction: column;
+align-items: center;
+gap: 72px;}
 
 .second-card-heder {
   padding-top: 32px;
@@ -588,9 +575,8 @@ gap: 48px 24px;}
   text-align: center;
 }
 
-
 .team-card {
-flex-basis: calc((100% - 3*24px) / 4);
+/*flex-basis: calc((100% - 3*24px) / 4);*/
 background-color: var(--color-body);
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 border-radius: 0px 0px 4px 4px;}
@@ -610,13 +596,47 @@ border-radius: 0px 0px 4px 4px;}
   height: 40px;
   border-radius: 50%;
   background-color: var(--color-iris-focus-aktiv-link);
-  transition: background-color var(--transition);
-}
+  
+  /*transition: background-color var(--transition);*/}
 
-.social-list-link:hover,
+
+  @media screen and (min-width: 427px) and (max-width: 767px) {
+  .team-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 64px 24px}
+
+    .team-list {
+      flex-basis: calc((100% * 24px) / 2);
+}}
+
+
+/*.social-list-link:hover,
 .social-list-link:focus {
   background-color: var(--color-ocean-hover-pressed);
-}
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*========Секція з лого компаній. КЛІЄНТИ================*/
