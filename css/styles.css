@@ -61,7 +61,7 @@ padding-bottom: 96px;}
   padding-right: 16px;
 }
 
-@media screen and (min-width: 428px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 428px;
     margin-left: auto;
@@ -347,7 +347,7 @@ screen and (min-resolution: 2ddpx) and (max-width: 767px) {
   .hero {
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Tab-hero1x.jpg);
   background-size: 768px 436px;
-  padding top: 112px;
+  padding-top: 112px;
   padding-bottom: 108px;
   }
 }
@@ -395,18 +395,17 @@ transition: color var(--transition), background-color var(--transition);
 
 @media screen and (max-width: 767px)
  {.hero-one {
-  width: 100%;
+  margin: 0 auto;
+  width: 320px;
   margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   color: var(--color-body);
-  margin-left: auto;
-  margin-right: auto;
   } }
 
   @media screen and (min-width: 768px) {
-    .hero-one {
-      width: 100%;
+    .hero-one {margin: 0 auto;
+      width: 496px;
       margin-bottom: 40px;
       font-size: 56px;
       line-height: 1.07;
@@ -538,12 +537,9 @@ align-items: center;
       padding-bottom: 120px;
       }}
     
-
-
     .third-list {
       display: flex;
       gap: 24px;}
-
 
     .third-list-item {
       flex-basis: calc((100% - 2*24px) / 3);}
@@ -558,7 +554,7 @@ margin-bottom: 72px;
 }
 
 /*============================Четверта секція НАША КОМАНДА=================*/
-  
+
   
 .fourth {
 background-color: var(--color-cloud-accent)}
@@ -596,70 +592,99 @@ border-radius: 0px 0px 4px 4px;}
   height: 40px;
   border-radius: 50%;
   background-color: var(--color-iris-focus-aktiv-link);
-  
-  /*transition: background-color var(--transition);*/}
+  }
 
 
-  @media screen and (min-width: 427px) and (max-width: 767px) {
-  .team-list {
+  @media screen and (min-width: 768px) {
+    .section-padding {
+      padding-top: 96px;
+      padding-bottom: 96px;
+    }
+    .team-list {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 64px 24px}
 
     .team-list {
-      flex-basis: calc((100% * 24px) / 2);
+      flex-basis: calc((100% - 24px) / 2);
 }}
 
+@media screen and (min-width: 1200px) {
+  .section-padding {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .team-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px}
 
-/*.social-list-link:hover,
+    .team-list {
+      flex-basis: calc((100% - 3*24px) / 4);
+}
+
+.social-list-link {
+transition: background-color var(--transition);
+}
+
+.social-list-link:hover,
 .social-list-link:focus {
-  background-color: var(--color-ocean-hover-pressed);
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+background-color: var(--color-ocean-hover-pressed);
+}
+}
 
 
 /*========Секція з лого компаній. КЛІЄНТИ================*/
 
-.fifth {padding-top: 130px;
-padding-bottom: 120px;
+.fifth {
+padding-top: 96px;
+padding-bottom: 96px;
+}
+  .company-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 74px 24px;
+  
+  flex-basis: calc((100% - 24px) / 2);
 }
 
-.company-list {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-}
 .company-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 168px;
+  width: 190px;
   height: 88px;
   border-radius: 4px;
   border: 1px solid var(--color-helper);
   fill: var(--color-helper);
-  transition: fill var(--transition), border-color var(--transition);
+  /*transition: fill var(--transition), border-color var(--transition);*/
+}
+
+/*@media screen and (max-width: 767px) {
+.company-list {
+  flex-basis: calc((100% - 24px) / 2);
+}}*/
+
+
+
+@media screen and (min-width: 768px) {
+  .company-list {
+    flex-basis: calc((100% - 2*24px) / 3);
+}
+.company-link {
+  width: 168px;
+  /*transition: fill var(--transition), border-color var(--transition);*/
+}
+}
+
+@media screen and (min-width: 1200px) {
+.fifth {
+  padding: 120px 0px;
 }
 
 .company-link:hover,
@@ -668,12 +693,25 @@ padding-bottom: 120px;
   border-color: var(--color-ocean-hover-pressed);
 }
 
+.company-link {
+transition: fill var(--transition), border-color var(--transition);
+}
+
+}
+
 /*================Футер=======================*/
 
   .footer {
     background-color: var(--color-navy-blue-overlay-shadow-heading);
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .footer {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }  
   }
 
 .logo-foot {
@@ -695,9 +733,10 @@ padding-bottom: 120px;
   .text-footer {
   font-size: 16px;
   line-height: 1.5;
-  width: 264px;
+  width: 268px;
   letter-spacing: 0.02em;
   color: var(--color-cornflower-accent);
+  margin-bottom: 72px;
 }
 
   .head-footer {
@@ -709,9 +748,36 @@ padding-bottom: 120px;
     margin-bottom: 24px;
   }
 
-  .social-container-footer {
+.footer-container {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    @media screen and (min-width: 768px) {
+      .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+
+
+  @media screen and (min-width: 768px) {
+    .social-container-footer {
+      margin-left: 24px;
+  }}
+
+
+  @media screen and (min-width: 1200px) {
+    .social-container-footer {
     margin-left: 120px;
   }
+  }
+
+  
     .social-list-footer {
       display: flex;
       justify-content: center;
@@ -719,9 +785,6 @@ padding-bottom: 120px;
     
     }
   
-    .footer-container {
-      display: flex;
-    }
     .social-list-link-footer {
       display: flex;
       justify-content: center;
@@ -730,13 +793,19 @@ padding-bottom: 120px;
       height: 40px;
       border-radius: 50%;
       background-color: rgba(225, 225, 225, 0.1);
-      transition: background-color var(--transition);
+      
     }
 
-  .social-list-link-footer:hover,
+    @media screen and (min-width: 1200px) {
+      .social-list-link-footer:hover,
   .social-list-link-footer:focus {
     background-color: var(--color-green-akcent);
   }
+  .social-list-link-footer {
+    transition: background-color var(--transition);
+  }
+    }
+  
 
   .footer-input{
   background-color: var(--color-navy-blue-overlay-shadow-heading);
@@ -744,23 +813,38 @@ padding-bottom: 120px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: none;
-  width: 264px;
+  width: 398px;
   height: 40px;
-  margin-right: 24px;
+  margin-bottom: 16px;
   color: var(--color-body);
   }
+
+  @media screen and (min-width: 768px) {
+    .footer-input{
+      width: 264px;
+      margin-right: 24px;
+  }}
 
   .footer-input::placeholder {
     padding-left: 16px;
   }
 
   .footer-input-div {
-    display: flex;
+    display: block;
+    margin: 0 auto;
   }
 
-  .footer-modal-form-div {
+  @media screen and (min-width: 768px) {
+.footer-input-div {
+    display: flex;
+  }}
+
+  @media screen and (min-width: 768px){
+    .footer-modal-form-div {
 margin-left: 80px;
   }
+  }
+  
 
 .footer-form-button {
   display: flex;
@@ -773,12 +857,40 @@ margin-left: 80px;
   border-radius: 4px;
   border: none;
   padding: 8px 24px;
+  margin: 0 auto;
     }
   .button-form-svg {
     width: 24px;
     height: 24px;
     fill: var(--color-body);
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*=============Портфоліо друга сторінка==============================*/
 
 .portfolio-btn-container {
