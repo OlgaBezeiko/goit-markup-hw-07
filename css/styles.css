@@ -57,15 +57,15 @@ padding-bottom: 96px;}
 /*==========================ХЕДЕР=====================================*/
 .container {
   width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 428px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -77,7 +77,7 @@ padding-bottom: 96px;}
   
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 1158px;
   }
 }
 
@@ -347,8 +347,6 @@ screen and (min-resolution: 2ddpx) and (max-width: 767px) {
   .hero {
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Tab-hero1x.jpg);
   background-size: 768px 436px;
-  padding-top: 112px;
-  padding-bottom: 108px;
   }
 }
 
@@ -364,7 +362,7 @@ screen and (min-resolution: 2ddpx) and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/desk-hero1x.jpg);
     background-size: 1440px 600px;
-   
+   padding: 188px 0px;
   }
   
 }
@@ -421,11 +419,7 @@ transition: color var(--transition), background-color var(--transition);
 
   @media screen and (min-width: 1200px) {
    .hero-one {margin: 0 auto;
-      width: 496px;
       margin-bottom: 48px;
-      font-size: 56px;
-      line-height: 1.07;
-      color: var(--color-body);
       } 
      
   }
@@ -448,8 +442,6 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--color-slate-text);} 
-
-
 
   .second {
     padding: 96px 0px;} }
@@ -649,7 +641,6 @@ padding-bottom: 96px;
   justify-content: center;
   flex-wrap: wrap;
   gap: 74px 24px;
-  
   flex-basis: calc((100% - 24px) / 2);
 }
 
@@ -808,7 +799,9 @@ transition: fill var(--transition), border-color var(--transition);
     }
   
     @media screen and (min-width: 1200px) {
-      
+      .footer-container {
+        padding-left: 16px;
+      }
       .footer-modal-form-div {
         margin-left: 80px;
       }
