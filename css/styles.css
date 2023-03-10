@@ -56,28 +56,28 @@ padding-bottom: 96px;}
 
 /*==========================ХЕДЕР=====================================*/
 .container {
-  width: 100%;
+  max-width: 428px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
-
+/*
 @media screen and (min-width: 480px) {
   .container {
     width: 428px;
   }
-}
+}*/
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 } 
   
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
   }
 }
 
@@ -656,10 +656,10 @@ padding-bottom: 96px;
   /*transition: fill var(--transition), border-color var(--transition);*/
 }
 
-@media screen and (max-width: 767px) {
+/*@media screen and (max-width: 767px) {
 .company-list {
   flex-basis: calc((100% - 24px) / 2);
-}}
+}}*/
 
 
 
@@ -814,9 +814,9 @@ transition: fill var(--transition), border-color var(--transition);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: none;
-  width: 398px;
+  width: 100%;
   height: 40px;
-  margin-bottom: 16px;
+  margin-bottom: 16px; 
   color: var(--color-body);
   }
 
@@ -865,31 +865,6 @@ transition: fill var(--transition), border-color var(--transition);
     height: 24px;
     fill: var(--color-body);
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*=============Портфоліо друга сторінка==============================*/
@@ -1187,5 +1162,3 @@ border-color: var(--color-iris-focus-aktiv-link);
     .modal-click-link {
       color: var(--color-iris-focus-aktiv-link);
     }
-
- 
